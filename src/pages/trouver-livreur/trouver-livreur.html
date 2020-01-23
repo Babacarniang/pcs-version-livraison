@@ -1,0 +1,40 @@
+<<ion-header>
+  <ion-navbar>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div id="floating-panel">
+    <b>Départ: </b>
+    <select [(ngModel)]="start" id="start" (change)="calculateAndDisplayRoute()">
+      
+      <option value="Yoff">Yoff</option>
+      <option value="Parcelles Assainies">Parcelles Assainies</option>
+      <option value="Grand-Yoff">Grand-Yoff</option>
+      <option value="Almadies">Almadies</option>
+      <option value="Liberté6">Liberté6</option>
+      <option value="Grand-Dakar">Grand-Dakar</option>
+      <option value="Dieupeul">Dieupeul</option>
+      <option value="Dakar-Plateau">Dakar-Plateau</option>
+      <option value="Ucad">Ucad</option>
+      <option value="VDN">VDN</option>
+      <option value="Foire">Foire</option>
+      <option value="CPI">CPI</option>
+    </select><br>
+    <b>Arrivée: </b>
+    <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+      <option value="Yoff">Yoff</option>
+      <option value="Parcelles Assainies">Parcelles Assainies</option>
+      <option value="Grand-Yoff">Grand-Yoff</option>
+      <option value="Almadies">Almadies</option>
+      <option value="Liberté6">Liberté6</option>
+      <option value="Grand-Dakar">Grand-Dakar</option>
+      <option value="Dieupeul">Dieupeul</option>
+      <option value="Dakar-Plateau">Dakar-Plateau</option>
+      <option value="Ucad">Ucad</option>
+      <option value="VDN">VDN</option>
+      <option value="Foire">Foire</option>
+      <option value="CPI">CPI</option>
+    </select>
+    </div>
+    <div #map id="map"></div>
+</ion-content>

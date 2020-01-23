@@ -1,0 +1,7 @@
+{
+  "name": "pcs-version-livraison",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
